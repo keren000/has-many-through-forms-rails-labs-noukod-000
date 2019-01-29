@@ -36,7 +36,8 @@
 
 <p> Or Add an other username: </p>
 <%= f.fields_for :user_attributes, @post.users.build do |u| %>
-		<%= u.text_field :username %><br>
+		<%= u.text_field :username %>
+    <br />
 	<% end %>
 
 <%= f.submit %>
