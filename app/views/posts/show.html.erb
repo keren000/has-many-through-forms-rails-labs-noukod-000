@@ -13,8 +13,9 @@
     <li> <%= comment.user.username %> says: <%= comment.content %> </li>
     <% end %>
   </ul>
-  <br></br>
-<p> Users: </p>
+  <br />
+  
+<p><b> Users:</b></p>
   <ul>
     <% @post.users.uniq.each do |user| %>
     <li><%= link_to user.username, user_path(user) %> </li>
